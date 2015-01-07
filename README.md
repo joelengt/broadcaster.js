@@ -2,7 +2,7 @@ Broadcaster
 =============
 
 The aim of this project is to provide a fast and easy way for communication
-between multiple objects.
+between multiple objects and removing hard references.
 
 If you’re interested in broadcaster.js then feel free to follow me on twitter
 ([@juliocanares](https://twitter.com/juliocanares)) and I will keep you posted!
