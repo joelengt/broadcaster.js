@@ -44,9 +44,8 @@ This will create a minified version at bin/broadcaster.min.js
 - addEventListener , removeEventListener , hasEventListener and dispatchEvent
 - pass data when dispatch an event
 
-
-### Usage ###
-========
+Usage
+=============
 
 #### Basic ####
 
