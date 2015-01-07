@@ -1,4 +1,4 @@
-Broadcaster Global Event Emitter
+Broadcaster
 =============
 
 The aim of this project is to provide a fast and easy way for communication
@@ -50,7 +50,7 @@ This will create a minified version at bin/broadcaster.min.js
     var goProfileHandler = function (parameters) {
             console.log(parameters); // {type:"GO_PROFILE" , user_id:100}
     };
-    
+
     //addEventListener
     Broadcaster.addEventListener("GO_PROFILE", goProfileHandler);
 
