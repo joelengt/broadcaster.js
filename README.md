@@ -44,7 +44,11 @@ This will create a minified version at bin/broadcaster.min.js
 - addEventListener , removeEventListener , hasEventListener and dispatchEvent
 - pass data when dispatch an event
 
+
 ### Usage ###
+========
+
+#### Basic ####
 
 ```javascript
     var goProfileHandler = function (parameters) {
@@ -62,6 +66,48 @@ This will create a minified version at bin/broadcaster.min.js
 
     //removeEventListener
     Broadcaster.removeEventListener("GO_PROFILE", goProfileHandler);
+```
+
+#### Objects ####
+
+```javascript
+    /**
+     * check that there is not reference between watch , developer and dog objects.
+     * broadcaster is global event emitter , is magic :]
+     */
+
+    var APP = APP || {};
+
+    //--- Watch
+    APP.Watch = function () {
+        var timer = setTimeout(function () {
+            clearTimeout(timer);
+            Broadcaster.dispatchEvent("TIMER_COMPLETE", {message: "from watch"});
+        }, 3000);
+    };
+
+    //--- Developer
+    APP.Developer = function () {
+        Broadcaster.addEventListener("TIMER_COMPLETE", this.timeCompleteHandler);
+    };
+    APP.Developer.prototype.timeCompleteHandler = function (parameters) {
+        console.log("is time for code --> ", parameters);
+    };
+
+    //--- Dog
+    APP.Dog = function () {
+        Broadcaster.addEventListener("TIMER_COMPLETE", this.timeCompleteHandler);
+    };
+    APP.Dog.prototype.timeCompleteHandler = function (parameters) {
+        console.log("is time for food --> ", parameters);
+    };
+
+    //the watch object dispatch the event "TIMER_COMPLETE" when time is completed.
+    var watch = new APP.Watch();
+
+    //developer and dog object is waiting for listen the "TIMER_COMPLETE" event
+    new APP.Developer();
+    new APP.Dog();
 ```
 
 This content is released under the (http://opensource.org/licenses/MIT) MIT License.
