@@ -46,7 +46,15 @@ This will create a minified version at bin/broadcaster.min.js
 
 Usage
 =============
-
+- first add the broadcaster script in your html
+```html
+  <head>
+  </head>
+  <body>
+    <!-- Broadcaster.js -->
+    <script src="bin/broadcaster.min.js"></script>
+  </body>
+```
 #### Basic ####
 
 ```javascript
