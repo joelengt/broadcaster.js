@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "event emitter for global communication",
   "author": "@juliocanares",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git"
   },
