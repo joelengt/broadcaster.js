@@ -4,7 +4,7 @@ var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 
 var paths = {
-    jsSource: 'src/*.js',
+    jsSource: 'index.js',
     jsDist: 'dist/'
 };
 
