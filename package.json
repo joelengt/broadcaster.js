@@ -1,17 +1,16 @@
 {
-  "name": "broadcaster",
-  "version": "0.0.1",
-  "description": "event emitter for global communication",
+  "name": "broadcaster.js",
+  "version": "1.0.0",
+  "description": "simple but powerful event emitter for global communication",
   "author": "@juliocanares",
   "license": "MIT",
   "repository": {
     "type": "git"
   },
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-concat": "^2.3.3",
-    "gulp-header": "^1.2.2",
-    "gulp-stylus": "^1.3.4",
-    "gulp-uglify": "^0.3.1"
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.1"
   }
 }

@@ -4,13 +4,13 @@ Broadcaster
 The aim of this project is to provide a fast and easy way for communication
 between multiple objects and removing hard references.
 
-If you’re interested in broadcaster.js then feel free to follow me on twitter
-([@juliocanares](https://twitter.com/juliocanares)) and I will keep you posted!
+### Size ###
 
+602 bytes minified
+320 bytes gzipped
 
 ### Road Map ###
 
-* Create a Typescript definition file for Broadcaster.js
 * Add features removeAllByTypeEvent and removeAllEvents
 
 ### Contribute ###
@@ -22,7 +22,7 @@ Want to be part of the broadcaster.js project? Great! All are welcome! We will g
 Broadcaster is built with Gulp. If you don't already have this, go install Node and NPM then install Gulp.
 
 ```
-$ npm install --global gulp
+$ npm install -g gulp
 ```
 
 Then, in the folder where you have downloaded the source, install the build dependencies using npm:
@@ -37,15 +37,16 @@ Then build:
 $> gulp
 ```
 
-This will create a minified version at bin/broadcaster.min.js
+This will create a minified version at dist/broadcaster.min.js
 
 ### Current features ###
 
-- addEventListener , removeEventListener , hasEventListener and dispatchEvent
+- addEventListener, removeEventListener, hasEventListener and dispatchEvent
 - pass data when dispatch an event
 
 Usage
 =============
+
 - first add the broadcaster script in your html
 ```html
   <head>
@@ -116,5 +117,3 @@ Usage
     new APP.Developer();
     new APP.Dog();
 ```
-
-This content is released under the (http://opensource.org/licenses/MIT) MIT License.
