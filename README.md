@@ -29,9 +29,11 @@ between multiple objects and removing hard references.
 Usage
 =========
 
-- using node.js
+- node.js
 
 ``` javascript
+  npm install broadcaster.js --save
+  ....
   var Broadcaster = require('broadcaster.js');
 ```
 
