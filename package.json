@@ -1,6 +1,6 @@
 {
   "name": "broadcaster.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple but powerful event emitter for global communication",
   "author": "@juliocanares",
   "license": "MIT",
